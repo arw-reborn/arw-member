@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#0d0015"/>
+  <defs>
+    <radialGradient id="rg1" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#c065ff"/>
+      <stop offset="100%" stop-color="#7b1fff"/>
+    </radialGradient>
+    <radialGradient id="rg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff3cac" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff3cac" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- glow bg -->
+  <ellipse cx="256" cy="220" rx="185" ry="165" fill="url(#rg2)"/>
+  <!-- wing kiri -->
+  <path d="M256 265 Q175 175 90 198 Q135 232 158 275 Q188 318 232 295 Z" fill="url(#rg1)" opacity="0.95" filter="url(#glow)"/>
+  <path d="M256 265 Q165 205 82 248 Q128 268 152 308 Q183 348 228 310 Z" fill="#9b30ff" opacity="0.55"/>
+  <!-- wing kanan -->
+  <path d="M256 265 Q337 175 422 198 Q377 232 354 275 Q324 318 280 295 Z" fill="url(#rg1)" opacity="0.95" filter="url(#glow)"/>
+  <path d="M256 265 Q347 205 430 248 Q384 268 360 308 Q329 348 284 310 Z" fill="#9b30ff" opacity="0.55"/>
+  <!-- badan -->
+  <ellipse cx="256" cy="275" rx="26" ry="52" fill="url(#rg1)" filter="url(#glow)"/>
+  <!-- permata kepala -->
+  <circle cx="256" cy="195" r="26" fill="#ffd700" filter="url(#glow)"/>
+  <circle cx="256" cy="195" r="17" fill="#fff7cc"/>
+  <circle cx="256" cy="195" r="8" fill="#ffd700"/>
+  <!-- teks ARW -->
+  <text x="256" y="372" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="56" font-weight="900" fill="url(#rg1)" letter-spacing="3" filter="url(#glow)">ARW</text>
+  <text x="256" y="410" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#e0aaff" letter-spacing="7" opacity="0.9">REBORN</text>
+  <!-- bintang deco -->
+  <circle cx="138" cy="148" r="6" fill="#ffd700" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="374" cy="148" r="6" fill="#ffd700" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="96"  cy="305" r="4" fill="#ff3cac" opacity="0.7"/>
+  <circle cx="416" cy="305" r="4" fill="#ff3cac" opacity="0.7"/>
+  <circle cx="188" cy="118" r="3" fill="#c065ff" opacity="0.6"/>
+  <circle cx="324" cy="118" r="3" fill="#c065ff" opacity="0.6"/>
+</svg>
